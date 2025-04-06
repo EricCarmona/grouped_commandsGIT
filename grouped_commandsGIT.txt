@@ -1,0 +1,82 @@
+### Comandos Básicos de Git
+1. **git status** => Muestra el estado actual del repositorio, incluyendo archivos modificados o no rastreados.
+2. **git add .** => Añade todos los cambios al área de preparación para el próximo commit.
+3. **git commit -m "mensaje"** => Crea un nuevo commit con los cambios que han sido añadidos al área de preparación.
+4. **git push origin nombre-de-la-rama** => Sube los cambios de una rama específica al repositorio remoto.
+
+### Comandos de Rama
+5. **git branch** => Muestra una lista de las ramas locales en el repositorio.
+6. **git checkout nombre-de-la-rama** => Cambia a la rama especificada.
+7. **git checkout -b nueva-rama** => Crea una nueva rama y cambia a ella.
+8. **git branch -r** => Muestra las ramas remotas del repositorio.
+
+### Comandos para Sincronización
+9. **git pull origin nombre-de-la-rama** => Descarga y fusiona los cambios de una rama remota a la rama local.
+10. **git log** => Muestra el historial de commits de la rama actual.
+11. **git branch -d nombre-de-la-rama** => Elimina una rama local específica.
+
+### Comandos de Configuración
+12. **git config --global user.name "Tu Nombre"** => Establece tu nombre de usuario globalmente para Git.
+13. **git config --global user.email "tuemail@example.com"** => Establece tu correo electrónico globalmente para Git.
+14. **git config --list** => Muestra la configuración actual de Git (nombre de usuario, correo, etc.).
+
+### Otros Comandos Útiles
+15. **git remote -v** => Muestra las URLs de los repositorios remotos configurados.
+16. **git stash** => Guarda temporalmente los cambios no confirmados en un "stash" para recuperarlos después.
+
+### Comandos de Conflictos
+17. **git merge** => Combina los cambios de una rama en la rama actual.
+18. **git mergetool** => Abre una herramienta visual para resolver conflictos de fusión.
+19. **git rebase** => Reaplica los commits de una rama sobre otra, limpiando el historial.
+
+### Comandos de Remoto
+20. **git remote add origin URL** => Añade un repositorio remoto a tu proyecto.
+21. **git remote remove origin** => Elimina el repositorio remoto configurado.
+22. **git fetch origin** => Descarga los cambios del repositorio remoto sin hacer un merge.
+
+### Ver Historial
+23. **git log --oneline** => Muestra el historial de commits de forma resumida.
+24. **git log --graph --oneline --decorate --all** => Muestra el historial con un gráfico de ramas.
+
+### Ramas Remotas
+25. **git push --delete origin nombre-de-la-rama** => Elimina una rama remota.
+26. **git pull --rebase** => Actualiza tu rama local con cambios remotos, preservando un historial limpio.
+
+### Comandos de Seguridad
+27. **git gc** => Realiza una "recolección de basura" para optimizar el repositorio.
+28. **git fsck** => Verifica la integridad del repositorio, buscando posibles errores.
+
+### Comandos de Seguimiento
+29. **git tag** => Crea una etiqueta en un commit, normalmente usada para marcar versiones.
+30. **git show tag nombre-del-tag** => Muestra detalles sobre una etiqueta específica.
+
+### Deshacer y Revertir Cambios
+31. **git revert <commit>** => Crea un nuevo commit que deshace los cambios de un commit anterior.
+32. **git reset --hard HEAD~n** => Deshace los últimos `n` commits de forma irreversible.
+
+### Comando de Optimización
+33. **git prune** => Elimina objetos huérfanos del repositorio, liberando espacio.
+
+### Comandos de Submódulos
+34. **git submodule add <repositorio>** => Añade un submódulo (repositorio dentro de otro).
+35. **git submodule init** => Inicializa los submódulos en el repositorio.
+36. **git submodule update** => Actualiza los submódulos a su último estado.
+37. **git submodule foreach <comando>** => Ejecuta un comando en todos los submódulos.
+
+### Comandos de Búsqueda y Debugging
+38. **git bisect start** => Inicia una búsqueda binaria para encontrar el commit que introdujo un error.
+39. **git bisect bad** => Marca el commit actual como "malo" (donde el error fue introducido).
+40. **git bisect good** => Marca un commit anterior como "bueno" (sin el error).
+41. **git log --grep="texto"** => Busca en los mensajes de commit por un texto específico.
+
+### Comandos de Manejo de Historia (Reescribir Historial)
+42. **git rebase -i HEAD~n** => Realiza un rebase interactivo para reordenar o modificar commits.
+43. **git filter-branch** => Reescribe el historial de Git, útil para borrar archivos sensibles o cambiar datos en todos los commits.
+44. **git reflog** => Muestra un registro de todas las referencias del repositorio, incluyendo cambios no reflejados en el historial.
+
+### Comandos de Git para Automatización
+45. **git hooks** => Permite ejecutar scripts automáticos antes o después de ciertos comandos de Git.
+
+### Comandos para Git en Proyectos Grandes
+46. **git gc** => Realiza una recolección de basura para optimizar el repositorio y reducir su tamaño.
+47. **git lfs (Large File Storage)** => Permite gestionar archivos grandes en Git, ideal para proyectos con archivos pesados.
